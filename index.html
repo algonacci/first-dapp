@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My First dApp</title>
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"
+      type="application/javascript"
+    ></script>
+    <script src="script.js"></script>
   </head>
   <body>
     <div>
@@ -13,8 +23,12 @@
       <p>Here we can set or get the mood:</p>
       <label for="mood">Input Mood:</label> <br />
       <input type="text" id="mood" />
-      <button onclick="getMood()">Get Mood</button>
       <button onclick="setMood()">Set Mood</button>
+      <br />
+      <button onclick="getMood()">Get Mood</button>
+      <div id="getMood">
+        <p></p>
+      </div>
     </div>
   </body>
 </html>
